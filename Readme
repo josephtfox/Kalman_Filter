@@ -1,0 +1,75 @@
+Kalman Filter Project: Vehicle Tracking
+
+Project Description:
+In this project, you will implement a Kalman filter to track a vehicle's position and velocity using noisy GPS measurements. The Kalman filter will combine these measurements with a motion model to provide more accurate estimates of the vehicle's state.
+
+Objectives:
+1. Implement a basic Kalman filter algorithm
+2. Apply the filter to real-world noisy data
+3. Visualize and analyze the results
+
+Instructions:
+1. Set up your development environment (Python 3.7+ recommended)
+2. Implement the Kalman filter algorithm
+3. Load and preprocess the provided dataset
+4. Apply the Kalman filter to the data
+5. Visualize the results
+6. Analyze the filter's performance
+
+Dataset:
+Use the provided "vehicle_data.csv" file, which contains the following columns:
+- Time (seconds)
+- Measured X position (meters)
+- Measured Y position (meters)
+- True X position (meters)
+- True Y position (meters)
+
+The measured positions contain noise, while the true positions are for comparison.
+
+Implementation Steps:
+1. State representation: Define the state vector [x, y, vx, vy]
+2. Prediction step: Implement the time update equations
+3. Update step: Implement the measurement update equations
+4. Main loop: Process the data sequentially, applying prediction and update steps
+
+Required Libraries:
+- NumPy: For numerical computations
+- Matplotlib: For visualization
+- Pandas: For data loading and manipulation
+
+Resources:
+1. Kalman Filter explanation: "How a Kalman Filter Works, in Pictures" (https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/)
+2. Kalman Filter tutorial: "Kalman Filter Tutorial" (https://www.kalmanfilter.net/default.aspx)
+3. Wikipedia article: "Kalman filter" (https://en.wikipedia.org/wiki/Kalman_filter)
+
+Project Structure:
+kalman_filter_project/
+│
+├── README.md
+├── vehicle_data.csv
+├── kalman_filter.py
+├── main.py
+└── visualize_results.py
+
+Getting Started:
+1. Clone this repository
+2. Install required libraries: pip install numpy matplotlib pandas
+3. Implement the Kalman filter in kalman_filter.py
+4. Run the main script: python main.py
+5. Visualize results: python visualize_results.py
+
+Expected Output:
+Your implementation should produce:
+1. A plot comparing raw measurements, true positions, and Kalman filter estimates
+2. Error metrics (e.g., RMSE) for raw measurements and Kalman filter estimates
+
+Evaluation:
+Evaluate your Kalman filter implementation by:
+1. Comparing the filter's estimates to the true positions
+2. Analyzing the reduction in noise compared to raw measurements
+3. Experimenting with different process and measurement noise covariances
+
+Additional Challenges:
+1. Implement an extended Kalman filter for non-linear motion models
+2. Add additional sensor measurements (e.g., accelerometer data)
+3. Optimize the filter's parameters using real or simulated data
