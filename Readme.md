@@ -24,19 +24,6 @@ This project implements a sophisticated Kalman filter for tracking multiple deli
 - Scipy (optional)
 - Matplotlib (optional for visualization)
 
-## Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/drone-tracking-kalman-filter.git
-
-# Navigate to project directory
-cd drone-tracking-kalman-filter
-
-# Install required dependencies
-pip install numpy pandas
-```
-
 ## Detailed Project Explanation
 
 ### Kalman Filter Components
@@ -81,23 +68,6 @@ pip install numpy pandas
 - Sensor fusion in robotics
 - Predictive positioning systems
 
-## Project Structure
-
-drone-tracking-kalman-filter/
-│
-├── src/
-│   ├── drone_tracker.py         # Main Kalman filter implementation
-│   └── data_generator.py        # Synthetic data generation
-│
-├── data/
-│   └── drone_data.csv           # Generated drone tracking data
-│
-├── tests/
-│   └── test_drone_tracker.py    # Unit tests
-│
-├── requirements.txt             # Project dependencies
-└── README.md                    # Project documentation
-
 ## Mathematical Background
 
 The Kalman filter is based on a recursive algorithm that:
@@ -114,13 +84,6 @@ Key equations include:
 - Mean Squared Error (MSE)
 - Position Accuracy
 - Noise Reduction Ratio
-
-## Contact
-
-[Your Name]
-- Email: your.email@example.com
-- Project Link: [https://github.com/yourusername/drone-tracking-kalman-filter](https://github.com/yourusername/drone-tracking-kalman-filter)
-
 
 Resources:
 1. Kalman Filter explanation: "How a Kalman Filter Works, in Pictures" (https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/)
