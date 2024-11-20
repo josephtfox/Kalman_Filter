@@ -21,8 +21,7 @@ This project implements a sophisticated Kalman filter for tracking multiple deli
 
 - NumPy
 - Pandas
-- Scipy (optional)
-- Matplotlib (optional for visualization)
+- Matplotlib 
 
 ## Detailed Project Explanation
 
@@ -37,8 +36,13 @@ This project implements a sophisticated Kalman filter for tracking multiple deli
    - Extracts position information from the state vector.
 
 3. **Noise Covariance Matrices**:
-   - **Process Noise (Q)**: Represents uncertainty in the system's movement.
    - **Measurement Noise (R)**: Represents sensor measurement uncertainty.
+
+4. **State Covariance Matrix (P)**:
+    - state covariance matrix consists of the variances associated with each of the state estimates as well as the correlation between the             errors in the state estimates.
+
+5. **State Position Vector (x)**
+    - Describing where an object is located in space
 
 ### Tracking Algorithm Workflow
 
